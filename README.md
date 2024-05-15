@@ -57,7 +57,7 @@ To get this project up and running on your local machine, follow these steps:
 3. **Download the Data**
 
     Download the dataset used in this project with this [link](https://drive.google.com/drive/folders/1AEAnfvA3ZZWDZrXH5mUbptU4y5cn9igO?usp=sharing) and place it in the `data/` directory.
-    The full dataset can be found [here](https://engineering.atspotify.com/2018/05/introducing-the-million-playlist-dataset-and-recsys-challenge-2018/) 
+    The full dataset can be found [here](https://engineering.atspotify.com/2018/05/introducing-the-million-playlist-dataset-and-recsys-challenge-2018/). 
 
 4. **Run the Notebooks**
 
