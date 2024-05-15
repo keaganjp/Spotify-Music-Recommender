@@ -15,18 +15,19 @@ This project utilizes various data visualizations to provide insights into the d
 - **Feature Correlations**: Visualize correlations between different features like loudness, energy, and danceability to understand how they contribute to music preferences.
 - **User Preferences Cluster**: Display clustering of user preferences to illustrate common listening patterns and tailor recommendations.
 <p align="center">
-  <img src="images/correlation_matrix.png" alt="Correlation Matrix of Music Features" width="200"/>
-  <img src="images/user_clusters.png" alt="Clustering of User Preferences" width="200"/>
+  <img src="images/correlation_mat.png" alt="Correlation Matrix of Music Features" width="250"/>
 </p>
-
+<p align = "center">
+    <img src="images/user_clusters.png" alt="Clustering of User Preferences" width="200"/>
+</p>
 For more detailed visualizations, navigate to the `images` directory or view them directly within the `app.ipynb` notebook.
 
 
 ## Project Structure
 
-- 'data': A directory to store the data files (JSON and CSV files)
-- 'app.ipynb': A Jupyter notebook that demonstrates the application of the recommender system.
-- 'images': Contains feature visualization, correlation matrices, and cluster visualizations among others 
+- `data`: A directory to store the data files (JSON and CSV files)
+- `app.ipynb`: A Jupyter notebook that demonstrates the application of the recommender system.
+- `images`: Contains feature visualization, correlation matrices, and cluster visualizations among others 
 
 ## Features
 
