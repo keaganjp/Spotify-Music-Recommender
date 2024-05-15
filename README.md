@@ -1,12 +1,34 @@
 # Spotify Music Recommender
 
-Welcome to the Spotify Music Recommender project! This project utilizes Spotify's rich dataset to build a music recommendation system. Using data from the Million Playlist Dataset (MPD), this system suggests songs based on user preferences and listening habits.
+Welcome to the Spotify Music Recommender project! This project utilizes Spotify's rich dataset to build a music recommendation system. Using data from the 'Spotify Million Playlist Dataset (MPD)', this system analyzes data from over 20000 playlists and 13 million songs and suggests songs based on user preferences and listening habits. The system harnesses the powers of a content-based filtering approach on a rich dataset consisting of features such as the number of tracks, song duration, number of artists, genres, and acoustic features (loudness, energy, key, speechiness, etc.). The feature space is further enhanced using sentiment analysis on album names and tracks in the playlist to provide deeper personalization of the recommendations.
+
+## Overview
+
+The Spotify Music Recommender leverages a sophisticated content-based filtering algorithm enhanced by sentiment analysis with TextBlob to provide personalized music recommendations. By analyzing acoustic features such as loudness, energy, and speechiness, alongside sentiment scores extracted from album names and track metadata, the system tailors its suggestions to align closely with user tastes and moods.
+
+This recommender system processes data using Python and its various libraries such as pandas, numpy, textblob, and its machine learning library sklearn, ensuring each recommendation is backed by a thorough analysis of available data. This project combines the Million Playlist dataset and a dataset extracted using the Spotify API containing the aforementioned acoustic features. The dataset is preprocessed and several visualizations are implemented to gain a deeper understanding of the feature space. This data is subsequently used to train a K-means clustering algorithm ( which outperformed agglomerative clustering and DBSCAN algorithms).  The resulting application not only suggests tracks but also helps users discover new music genres and artists that fit their preferences.
+
+## Visualizations
+
+This project utilizes various data visualizations to provide insights into the dataset and the performance of the recommendation algorithm. Below are some examples of the visualizations used:
+
+- **Feature Correlations**: Visualize correlations between different features like loudness, energy, and danceability to understand how they contribute to music preferences.
+- **User Preferences Cluster**: Display clustering of user preferences to illustrate common listening patterns and tailor recommendations.
+
+![Feature Correlation Matrix](images/correlation_mat.png)
+*Figure 1: Correlation matrix of music features.*
+
+![User Preferences Clustering](images/user_clusters.png)
+*Figure 2: Clustering of user preferences based on listening habits.*
+
+For more detailed visualizations, navigate to the `images` directory or view them directly within the `app.ipynb` notebook.
+
 
 ## Project Structure
 
-- `data_processing.ipynb`: Notebook for preprocessing and cleaning the Spotify dataset.
-- `model_training.ipynb`: Notebook for training the recommendation models.
-- `app.ipynb`: A Jupyter notebook that demonstrates the application of the recommender system.
+- 'data': A directory to store the data files (JSON and CSV files)
+- 'app.ipynb': A Jupyter notebook that demonstrates the application of the recommender system.
+- 'images': Contains feature visualization, correlation matrices, and cluster visualizations among others 
 
 ## Features
 
@@ -35,7 +57,8 @@ To get this project up and running on your local machine, follow these steps:
 
 3. **Download the Data**
 
-    Download the Spotify Million Playlist Dataset (MPD) from [Spotify's website](https://example.com) and place it in the `data/` directory.
+    Download the dataset used in this project with this [link](https://drive.google.com/drive/folders/1AEAnfvA3ZZWDZrXH5mUbptU4y5cn9igO?usp=sharing) and place it in the `data/` directory.
+    The full dataset can be found [here](https://engineering.atspotify.com/2018/05/introducing-the-million-playlist-dataset-and-recsys-challenge-2018/) 
 
 4. **Run the Notebooks**
 
@@ -47,8 +70,7 @@ To get this project up and running on your local machine, follow these steps:
 
 ## Usage
 
-To use the recommender system, navigate to the `app.ipynb` notebook and run all cells. Input your preferences when prompted to receive music recommendations.
-
+To the recommender system, navigate to the `app.ipynb` notebook and run all cells.
 ## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests, or open issues to suggest features or report bugs.
